@@ -1,0 +1,93 @@
+#+TITLE:STAC2014 ハンズオン 参加者向け 準備ガイド
+
+STAC2014ハンズオンに参加される方は下記の環境準備を済ませておき、ハンズオン内容に不安のある方は参考ドキュメントに目を通しておいてください。
+本ハンズオンではWebアプリケーションに対するシステムテストの自動化いくつか導入してみるという内容です。
+扱う技術はGebというGroovy言語によるWebDriverラッパーとSpockというテスティングフレームワークです。
+
+プログラミングを全くやったことがない人には難しいかと思いますが、
+なんらかの手続型、関数型プログラミングに触れたことがあれば十分に参加可能です。 # このドキュメントの環境準備をやってくだされば;-)
+
+
+
+* 環境準備
+次を準備してください。
+
++ JDK8 (JDK7でもよいです)
+  + 今回使うツールや言語を動作させるための基盤です。
++ IntelliJ IDEA 14 (Editionは好きなものでよいです。CommunityでもUltimateの評価版でもよいです)
+  + テストを記述するためのIDEです。
++ GVM
+  + Groovy言語に関わるインフラを簡単にインストールするためのツールです。
+  + Groovy
+    + 今回テストを実装するために使う言語です
+  + Gradle
+    + テストを実行するために必要なビルドツールです
++ Herokuアカウント
+  + システムテストの対象となるアプリケーションを動作させるためのインフラサービスです。
+  + HerokuToolbelt
+    + CUIでHerokuの操作をするためのツールです。
++ Mandrillアカウント
+  + メール送信を担うサービスです。
+
+** JDK8
++ 入手元URL:http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html
++ インストール,確認例:http://nanananande.helpfulness.jp/post-2897/
+
+** IntelliJ IDEA 14
++ 入手元URL:https://www.jetbrains.com/idea/download/
++ MacでJDK7以上を使って動作させる設定:http://blog.yotchang4s.org/2014/04/13/mac_java8_intellij_idea_13_1_1
++ 設定例:http://kyon-mm.bitbucket.org/blog/html/2013/12/01/intellij_setting.html
+
+** GVM
++ 入手元URL:http://gvmtool.net/
++ Mac/Linux/Cygwinでのインストールはコンソールでcurl -s get.gvmtool.net | bashとします。
++ コンソールでgvm --versionとしてバージョンが表示されたら大丈夫です。
++ Windowsの方はposh-gvmを利用できます。
+  + 入手元URL:https://github.com/flofreud/posh-gvm
+  + インストール,確認例:http://qiita.com/_y_u_/items/7a4ffd6b79c829c9962f
+
+*** Groovy
++ コンソールでgvm i groovyでインストールします。
++ コンソールでgroovy -vとしてバージョンが表示されたら大丈夫です。
+
+*** Gradle
++ コンソールでgvm i gradleでインストールします。
++ コンソールでgradle -vとしてバージョンが表示されたら大丈夫です。
+
+** Herokuアカウント
+クレジットカードの登録は不要です。
++ URL:https://signup.heroku.com/www-header
+
+*** HerokuToolbelt
++ 入手元URL:https://toolbelt.heroku.com/
++ インストール,確認例:http://blog.infinity-dimensions.com/2012/01/heroku-toolbelt-install.html
+
+** Mandrillアカウント
++ URL:https://mandrillapp.com/
+
+* 環境準備の確認
+[[https://github.com/kyonmm/stac2014-dummy][ダミーアプリケーション]] のGitHubのDeployボタンをクリックしてください。
+これにより、あなたのHerokuアカウントでダミーアプリケーションがデプロイされます。
+Herokuにログインしていなければログインをうながされるので、ログインしてください。
+
+Create New App画面が表示されたら、最下部の「Deploy For Free」をクリックして、デプロイを開始してください。
+数分で、デプロイは完了します。画面最下部の「View it」もしくは画面左側のPersonal Appsからデプロイしたアプリの画面を開いてください。
+アプリ名(URL)はある程度ランダムな文字列で決定されます。
+
+Welcome to Grailsと表示されていれば完了です。
+
+* 参考ドキュメント
+今回利用する技術に不安がある方は次を参考にしてください。
+
++ Groovy言語
+  + [[http://npnl.hatenablog.jp/entry/20100605/1275736594][Groovy基礎文法最速マスター]]
+  + [[http://kyon-mm.bitbucket.org/blog/html/_static/slides/phantomtype-groovy/GroovyInPhantomType.html][Groovy入門]]
++ Geb
+  + [[http://beta.mybetabook.com/showpage/4f27c8cc0cf26106dca875c8][GebではじめるWebテスト 〜第1回 導入編〜]]
+  + [[http://beta.mybetabook.com/showpage/4fde54210cf210b347918bbd][GebではじめるWebテスト〜新機能活用編〜]]
+  + [[http://qiita.com/nyasba/items/edf102578bde7edf0d4f][面倒な画面確認から解放されるためのgeb自動キャプチャ]]
++ Spock
+  + [[http://spock-framework-reference-documentation-ja.readthedocs.org/][Spock Framework リファレンスドキュメント]]
+
+
+*** See you STAC2014!
