@@ -11,7 +11,8 @@ STAC2014ハンズオンに参加される方は下記の環境準備を済ませ
 
 * 環境準備
 次を準備してください。
-
++ FireFox
+  + Webアプリケーションを操作するためのWebブラウザで、自動操作する対象になります。
 + JDK8 (JDK7でもよいです)
   + 今回使うツールや言語を動作させるための基盤です。
 + IntelliJ IDEA 14 (Editionは好きなものでよいです。CommunityでもUltimateの評価版でもよいです)
@@ -28,6 +29,10 @@ STAC2014ハンズオンに参加される方は下記の環境準備を済ませ
     + CUIでHerokuの操作をするためのツールです。
 + Mandrillアカウント
   + メール送信を担うサービスです。
+
+** FireFox
++ 入手元URL:https://www.mozilla.org/ja/firefox/new/
++ インストール,確認例:https://support.mozilla.org/ja/kb/how-download-and-install-firefox-windows
 
 ** JDK8
 + 入手元URL:http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html
