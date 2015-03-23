@@ -42,7 +42,7 @@ STAC2014ハンズオンに参加される方は下記の環境準備を済ませ
 
 ** IntelliJ IDEA 14
 + 入手元URL:https://www.jetbrains.com/idea/download/
-+ MacでJDK7以上を使って動作させる設定:http://blog.yotchang4s.org/2014/04/13/mac_java8_intellij_idea_13_1_1
++ MacでJDK7以上を使って動作させる設定:https://github.com/yotchang4s/blog.yotchang4s.org/blob/master/2014/04/13/mac_java8_intellij_idea_13_1_1.rst
 + 設定例:http://kyon-mm.hatenablog.com/entry/2014/12/04/093000
 
 ** GVM
